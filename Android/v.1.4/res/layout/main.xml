@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:padding="30sp" 
+    android:background="@color/background">
+<LinearLayout
+	android:layout_width="fill_parent" 
+	android:orientation="vertical" 
+	android:layout_height="wrap_content">
+<ImageView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:id="@+id/show_logging" 
+	android:layout_gravity="center_horizontal">
+</ImageView>
+<TextView 
+	android:layout_height="wrap_content" 
+	android:id="@+id/service_state" 
+	android:gravity="center" 
+	android:layout_width="fill_parent" 
+	android:textSize="18sp" 
+	android:textColor="@color/log_state" android:layout_marginBottom="15dip"/>
+<Button 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:id="@+id/start_button" 
+	android:text="@string/start_label" 
+	android:textSize="20sp" />
+<Button 
+	android:layout_height="wrap_content" 
+	android:id="@+id/set_button" 
+	android:layout_width="fill_parent" 
+	android:textSize="20sp" 
+	android:text="@string/set_label" />
+<Button 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:textSize="20sp" 
+	android:id="@+id/preview_button" 
+	android:text="@string/preview_label"/>	
+<Button 
+	android:layout_height="wrap_content" 
+	android:id="@+id/about_button" 
+	android:layout_width="fill_parent" 
+	android:textSize="20sp" 
+	android:text="@string/about_label" android:layout_marginBottom="15sp"/>
+<TextView android:layout_height="wrap_content" android:id="@+id/license" android:layout_width="fill_parent" android:gravity="center_horizontal"></TextView>	
+</LinearLayout>
+</LinearLayout>

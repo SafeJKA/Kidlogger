@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="fill_parent" 
+  android:layout_width="fill_parent" 
+  android:orientation="vertical" 
+  android:background="@color/background" 
+  android:paddingTop="5sp" 
+  android:paddingBottom="5sp">
+<TextView 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:layout_marginBottom="5sp" 
+	android:id="@+id/file_name" 
+	android:textColor="@color/log_state" 
+	android:textSize="16sp" 
+	android:paddingLeft="10sp">
+</TextView>
+<ScrollView 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent">
+<WebView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:id="@+id/web_content" android:paddingLeft="10sp">
+</WebView>
+</ScrollView>
+</LinearLayout>

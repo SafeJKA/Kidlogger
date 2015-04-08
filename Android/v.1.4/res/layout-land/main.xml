@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@color/background" 
+  android:orientation="vertical" android:gravity="center">
+<LinearLayout android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical|center_horizontal" android:layout_width="fill_parent" android:paddingBottom="10sp">
+ <ImageView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:id="@+id/show_logging" 
+	android:layout_gravity="center" android:paddingRight="10sp">
+</ImageView>
+<TextView 
+	android:layout_height="wrap_content" 
+	android:id="@+id/service_state" 
+	android:text="Service state" 
+	android:textColor="@color/log_state" 
+	android:textSize="18sp" android:layout_width="wrap_content">
+</TextView>
+</LinearLayout>
+<LinearLayout 
+	android:orientation="horizontal" 
+	android:layout_gravity="center" 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" android:layout_marginBottom="5sp">
+<TableLayout 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent">
+<TableRow 
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 
+	android:gravity="center">
+<Button 
+	android:layout_height="wrap_content" 
+	android:id="@+id/start_button" 
+	android:text="@string/start_label" 
+	android:textSize="20sp" 
+	android:layout_width="fill_parent">
+</Button>
+<Button 
+	android:layout_height="wrap_content" 
+	android:id="@+id/preview_button" 
+	android:text="@string/preview_label" 
+	android:textSize="20sp" 
+	android:layout_width="fill_parent">
+</Button>
+</TableRow>
+<TableRow 
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 
+	android:gravity="center">
+<Button 
+	android:layout_height="wrap_content" 
+	android:id="@+id/set_button" 
+	android:text="@string/set_label" 
+	android:textSize="20sp" 
+	android:layout_width="fill_parent">
+</Button>
+<Button 
+	android:layout_height="wrap_content" 
+	android:id="@+id/about_button" 
+	android:text="@string/about_label" 
+	android:textSize="20sp" 
+	android:layout_width="fill_parent">
+</Button>
+</TableRow>
+</TableLayout>
+</LinearLayout>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/license" android:gravity="center" android:maxWidth="280sp"></TextView>
+</LinearLayout>

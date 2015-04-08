@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:orientation="vertical" 
+  android:layout_height="fill_parent" android:gravity="top|center">
+<TextView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:id="@+id/test_result" 
+	android:layout_marginBottom="5sp" android:text="@string/tr_testresult_text">
+</TextView>
+<Button 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:id="@+id/send_test_report" 
+	android:textSize="20sp" 
+	android:layout_marginBottom="5sp" android:text="@string/tr_sendtestresult_btn_text">
+</Button>
+<LinearLayout 
+	android:layout_height="wrap_content" 
+	android:orientation="vertical" 
+	android:layout_width="fill_parent">
+<TextView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:textSize="16sp" android:text="@string/tr_filesent_text">
+</TextView>
+<TextView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:id="@+id/sent_file_name" 
+	android:layout_marginBottom="10sp" 
+	android:textSize="16sp" android:text="@string/tr_namesize_text">
+</TextView>
+</LinearLayout>
+<LinearLayout 
+	android:layout_height="wrap_content" 
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent" android:paddingBottom="5sp">
+<TextView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:layout_marginRight="5sp" 
+	android:textSize="16sp" android:text="@string/tr_status_text">
+</TextView>
+<TextView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:id="@+id/sent_status" 
+	android:textSize="16sp">
+</TextView>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingBottom="5sp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Time:" android:textSize="16sp" android:layout_marginRight="5sp"></TextView>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="16sp" android:id="@+id/send_time"></TextView>
+</LinearLayout>
+<LinearLayout 
+	android:layout_height="wrap_content" 
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent" android:paddingBottom="5sp">
+<TextView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:layout_marginRight="5sp" 
+	android:textSize="16sp" android:text="Total uploaded size (Mb):">
+</TextView>
+<TextView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:textSize="16sp" android:id="@+id/uploaded_size">
+</TextView>
+</LinearLayout>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tr_delivqueue_text" android:textSize="16sp"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/delivery_queue" android:paddingLeft="5sp"></TextView>
+</LinearLayout>

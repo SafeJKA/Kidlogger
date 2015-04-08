@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical" android:paddingLeft="10sp" android:paddingRight="10sp" android:paddingTop="7sp">
+<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/pref_url_summ" android:text="@string/pref_register_summ" android:paddingBottom="7sp"></TextView>  
+  
+</LinearLayout>

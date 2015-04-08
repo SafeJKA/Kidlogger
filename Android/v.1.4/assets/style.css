@@ -1,0 +1,43 @@
+.app   		{ color: green;
+		background: #FFFFFF;  	
+		font-size: 100%;    		
+		font-family: Verdana, Arial, Sans Serif;
+		margin-left: 0em;
+		padding-left: 1.5em; }
+
+.keystrokes	{ color: black;
+		background: Bisque;  	
+		font-size: 100%;    		
+		font-family: Verdana, Arial, Sans Serif;
+		margin-left: 0em;
+		padding-left: 1.0em; }
+
+
+.system,
+.idle   	{ color: chocolate;
+		font-size: 80%;    		
+		font-weight: bold;
+		font-family: Verdana, Arial, Sans Serif;
+		margin-left: 0em;
+		padding-left: 0.0em; }
+
+.clipboard	{ color: gray;
+		font-size: 70%;    		
+		font-family: Verdana, Arial, Sans Serif;
+		margin-left: 0em;
+		padding-left: 0.0em; }
+
+
+.url		{ color: blue;
+		font-size: 100%;    		
+		font-family: Verdana, Arial, Sans Serif;
+		margin-left: 0em;
+		padding-left: 0.0em; }
+		
+.gps-point	{ color: blue;
+		font-size: 100%;    		
+		font-family: Verdana, Arial, Sans Serif;
+		margin-left: 0em;
+		padding-left: 0.0em; }		
+
+

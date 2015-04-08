@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@color/background" 
+  android:orientation="vertical" 
+  android:gravity="top|center" 
+  android:padding="15sp">
+<Button 
+	android:layout_height="wrap_content" 
+	android:id="@+id/send_logs_button" 
+	android:textSize="20sp" 
+	android:layout_width="fill_parent" 
+	android:layout_marginBottom="10sp" android:text="@string/sendlogsbtn_label">
+</Button>
+<ScrollView 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent">
+<TextView 
+	android:id="@+id/logs_view" 
+	android:layout_width="fill_parent" 
+	android:textColor="@color/log_state" 
+	android:layout_height="wrap_content" android:text="@string/logsview_text">
+</TextView>
+</ScrollView>
+</LinearLayout>

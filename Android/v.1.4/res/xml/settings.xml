@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen android:title="@string/pref_coordinates_sett">
+	<CheckBoxPreference 
+		android:key="logGps" 
+		android:defaultValue="false" 
+		android:summary="@string/pref_gps_summ" 
+		android:title="@string/pref_gps_title">
+	</CheckBoxPreference>
+	<CheckBoxPreference 
+		android:defaultValue="true" 
+		android:key="logCell" 
+		android:summary="@string/pref_cellloc_summ" 
+		android:title="@string/pref_cellloc_title" 
+		android:dependency="logGsm">
+	</CheckBoxPreference>
+	<EditTextPreference 
+		android:key="refreshGPS" 
+		android:defaultValue="5" android:title="@string/pref_gpsrefresh_title" android:summary="@string/pref_gpsrefresh_summ" android:dialogMessage="@string/pref_gpsrefresh_dialog">
+	</EditTextPreference>
+	<EditTextPreference 
+		android:key="minDist" 
+		android:defaultValue="20" android:title="@string/pref_gpsdist_title" android:summary="@string/pref_gpsdist_summ" android:dialogMessage="@string/pref_gpsdist_dialog">
+	</EditTextPreference>
+</PreferenceScreen>
+<PreferenceScreen android:title="@string/pref_calls_sett">
+	<CheckBoxPreference 
+		android:key="logCalls" 
+		android:defaultValue="true" 
+		android:summary="@string/pref_calls_summ" 
+		android:title="@string/pref_calls_title">
+	</CheckBoxPreference>
+	<CheckBoxPreference 
+		android:key="logContact" 
+		android:title="@string/pref_contact_title" 
+		android:summary="@string/pref_contact_summ" 
+		android:dependency="logCalls" 
+		android:defaultValue="true">
+	</CheckBoxPreference>
+	<!-- <PreferenceScreen android:title="@string/pref_audio_sett" android:dependency="logCalls" xmlns:android="http://schemas.android.com/apk/res/android" android:summary="@string/pref_calls_sett_summ">
+	<CheckBoxPreference android:defaultValue="false" android:key="recInCalls" android:title="@string/pref_recincalls_title"></CheckBoxPreference>
+	<CheckBoxPreference android:key="recOutCalls" android:defaultValue="false" android:title="@string/pref_recoutcalls_title"></CheckBoxPreference>
+	<EditTextPreference 
+		android:key="maxTimeRec" 
+		android:title="@string/pref_maxtimerec_tile" 
+		android:defaultValue="30" 
+		android:summary="@string/pref_maxtimerec_summ" android:inputType="number" android:dialogMessage="@string/pref_maxtimerec_dialog">
+	</EditTextPreference>
+	<EditTextPreference 
+		android:key="maxSizeRec" 
+		android:title="@string/pref_maxsizerec_title" 
+		android:defaultValue="0.3" 
+		android:summary="@string/pref_maxsizerec_summ" android:inputType="numberDecimal" android:dialogMessage="@string/pref_maxsizerec_dialog">
+	</EditTextPreference>
+	<CheckBoxPreference android:key="uploadRec" android:defaultValue="true" android:title="@string/pref_uploadrec_title" android:summary="@string/pref_uploadrec_summ"></CheckBoxPreference>
+	<CheckBoxPreference android:key="delRec" android:defaultValue="true" android:title="@string/pref_delrec_title" android:summary="@string/pref_delrec_summ"></CheckBoxPreference>
+	<EditTextPreference android:key="keepRecTime" android:summary="@string/pref_keeprectime_summ" android:title="@string/pref_keeprectime_title" android:defaultValue="5" android:dialogMessage="@string/pref_keeprectime_dialog"></EditTextPreference>
+	</PreferenceScreen> -->
+</PreferenceScreen>
+<!-- <CheckBoxPreference
+	android:key="logAudioCalls" 
+	android:dependency="logCalls" 
+	android:summary="@string/pref_record_summ" 	
+	android:title="@string/pref_record_title" 
+	android:defaultValue="true">
+</CheckBoxPreference> -->
+<CheckBoxPreference 
+	android:key="logWifi" 
+	android:defaultValue="false" android:summary="@string/pref_wifi_summ" android:title="@string/pref_wifi_title">
+</CheckBoxPreference>
+<CheckBoxPreference 
+	android:key="logSms" 
+	android:defaultValue="false" android:summary="@string/pref_sms_summ" android:title="@string/pref_sms_title">
+</CheckBoxPreference>
+<CheckBoxPreference 
+	android:key="logIdle" 
+	android:defaultValue="false" android:title="@string/pref_idle_title">
+</CheckBoxPreference>
+<CheckBoxPreference 
+	android:defaultValue="true" 
+	android:key="logUrl" android:summary="@string/pref_url_summ" android:title="@string/pref_url_title">
+</CheckBoxPreference>
+<CheckBoxPreference 
+	android:defaultValue="false" 
+	android:key="logUsb" android:summary="@string/pref_usb_summ" android:title="@string/pref_usb_title">
+</CheckBoxPreference>
+<CheckBoxPreference 
+	android:key="logTasks" 
+	android:defaultValue="true" android:summary="@string/pref_tasks_summ" android:title="@string/pref_tasks_title">
+</CheckBoxPreference>
+<CheckBoxPreference 
+	android:key="logClipboard" 
+	android:defaultValue="false" android:summary="@string/pref_clipboard_summ" android:title="@string/pref_clipboard_title">
+</CheckBoxPreference>
+<CheckBoxPreference 
+	android:key="logPower" 
+	android:defaultValue="false" 
+	android:summary="@string/pref_power_summ" android:title="@string/pref_power_title">
+</CheckBoxPreference>
+<CheckBoxPreference 
+	android:key="logMedia" 
+	android:defaultValue="false" 
+	android:summary="@string/pref_media_summ" android:title="@string/pref_media_title">
+</CheckBoxPreference>
+<CheckBoxPreference 
+	android:key="logGsm" 
+	android:defaultValue="false" 
+	android:summary="@string/pref_gsm_summ" android:title="@string/pref_gsm_title">
+</CheckBoxPreference>
+<CheckBoxPreference 
+	android:key="logAir" 
+	android:defaultValue="false" android:title="@string/pref_air_title">
+</CheckBoxPreference>
+<CheckBoxPreference 
+	android:key="logKey" 
+	android:defaultValue="false" android:summary="@string/pref_keystroke_summ" android:title="@string/pref_keystroke_title">
+</CheckBoxPreference>
+<PreferenceScreen android:title="@string/pref_photos_sett">
+	<CheckBoxPreference android:key="logPhotos" 
+		android:defaultValue="true" 
+		android:title="@string/pref_photos_title" android:summary="@string/pref_photos_summ">
+	</CheckBoxPreference>
+	<!-- <CheckBoxPreference 
+		android:key="uploadPhotos" 
+		android:summary="@string/pref_upphotos_summ" 
+		android:title="@string/pref_upphotos_title" 
+		android:defaultValue="true">
+	</CheckBoxPreference>
+	<EditTextPreference android:key="maxMediaUpload" android:title="@string/pref_max_media_upload_title" android:dialogMessage="@string/pref_max_media_upload_dialog" android:defaultValue="5">
+	</EditTextPreference> -->
+</PreferenceScreen>
+<PreferenceScreen
+	android:key="dev_settings" 
+	android:title="@string/pref_devsettings_title">	
+	<Preference android:key="goToSite" android:layout="@layout/preference_layout"></Preference>
+	<CheckBoxPreference 
+		android:key="uploadKey" 
+		android:defaultValue="false" android:title="@string/pref_uplogs_title">
+ 	</CheckBoxPreference>
+ 	<EditTextPreference 
+ 		android:key="deviceField" 
+ 		android:dependency="uploadKey" android:title="@string/pref_devid_title" android:summary="@string/pref_devid_summ">
+	</EditTextPreference>
+	<EditTextPreference 
+		android:key="freqSend" 
+		android:dependency="uploadKey" 
+		android:title="@string/pref_delivinterval_title" android:summary="@string/pref_delivinterval_summ" android:dialogMessage="@string/pref_delivinterval_dialog" android:numeric="integer" android:defaultValue="10">
+	</EditTextPreference>
+	<net.kidlogger.kidlogger.SendTestReport
+		android:key="testRep" android:summary="My preference summary" android:title="My preference" android:dependency="uploadKey"/>
+
+</PreferenceScreen>
+<EditTextPreference android:key="accessKey" android:defaultValue="123456" android:title="@string/pref_accesspass_title" android:summary="@string/pref_accesspass_summ" android:dialogMessage="@string/pref_accesspass_dialog"></EditTextPreference>
+</PreferenceScreen>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:orientation="vertical" 
+  android:gravity="center" 
+  android:padding="30sp">
+<TextView 
+	android:layout_height="wrap_content" 
+	android:layout_gravity="center" 
+	android:gravity="center" 
+	android:id="@+id/api_name" 
+	android:text="@string/app_name" 
+	android:layout_width="wrap_content" 
+	android:layout_marginBottom="5sp" 
+	android:textSize="26sp" 
+	android:textStyle="bold">
+</TextView>
+<TextView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="Version" 
+	android:id="@+id/api_version" 
+	android:layout_marginBottom="20sp">
+</TextView>
+<TextView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:id="@+id/developer" 
+	android:text="Tesline-Service SRL" 
+	android:textStyle="bold" 
+	android:textSize="20sp" 
+	android:layout_marginBottom="5sp">
+</TextView>
+<TextView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:id="@+id/dev_url" 
+	android:autoLink="web" 
+	android:text="www.kidlogger.net" 
+	android:textSize="18sp">
+</TextView>
+</LinearLayout>
